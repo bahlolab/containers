@@ -1,5 +1,5 @@
 
-cran_pkgs <- c('cowplot', 'ggforce', 'BiocManager')
+cran_pkgs <- c('cowplot', 'ggforce', 'matrixStats', 'BiocManager')
 
 install.packages(cran_pkgs)
 
