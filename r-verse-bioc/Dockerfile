@@ -8,7 +8,7 @@ LABEL \
 # Install procps so that Nextflow can poll CPU usage and
 # deep clean the apt cache to reduce image/layer size (from nfcore/base)
 RUN apt-get update \
-    && apt-get install -y procps \
+    && apt-get install -y procps devscripts \
     && apt-get clean -y && rm -rf /var/lib/apt/lists/*
 
 # Install the R packages
