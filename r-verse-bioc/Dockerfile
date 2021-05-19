@@ -13,7 +13,7 @@ RUN apt-get update \
 
 # Install the R packages
 COPY install.R /
-RUN Rscipt install.R --vanilla
+RUN Rscript install.R --vanilla
 
 # Instruct R processes to use these empty files instead of clashing with a local version (from nfcore/base)
 RUN touch .Rprofile
